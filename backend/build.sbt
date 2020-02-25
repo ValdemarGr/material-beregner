@@ -11,48 +11,23 @@ lazy val root = (project in file("."))
     parallelExecution in Test := true,
     wartremoverErrors ++= Warts.unsafe,
     wartremoverErrors -= Wart.Any,
-    wartremoverErrors += Wart.custom("cerno.warts.CustomWarts"),
     libraryDependencies ++= Seq(
       scalaTest % Test,
-
-      //playWs,
-      //playWsXml,
 
       circeGeneric,
       circeParser,
       circeCore,
-      //guice,
-      scalaTestKafka,
-      kafkaStreamsJava,
-      kafkaStreamsScala,
-
-      kafka,
-      zookeeper,
-
-      slf4jlog,
-      log4j,
-      //gcs,
-      apacheCommons,
-      akkaKafka,
-      jobApi,
-      publicApi,
-      //gcsNioForTesting,
-      scalaLogging,
-      pprint,
+      circeDerivation,
 
       catsCore,
       catsEffect,
       fs2Core,
       fs2IO,
 
-      redis4cats,
-
       http4sCore,
       http4sDsl,
       http4sBlazeServer,
-      http4sCirce,
-
-      fs2Kafka
+      http4sCirce
     ),
     scalacOptions ++= Seq(
       "-deprecation",                      // Emit warning and location for usages of deprecated APIs.

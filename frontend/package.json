@@ -23,8 +23,9 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-select": "^3.0.4",
-    "typescript": "3.5.2",
-    "react-swipeable-views": "^0.13.3"
+    "react-swipeable-views": "^0.13.3",
+    "rxjs": "^6.5.4",
+    "typescript": "3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",

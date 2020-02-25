@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom'
+import App from "./App";
 
 const routing = (
     <BrowserRouter>
         <div className={"global"}>
-Helloo
+            <App />
         </div>
     </BrowserRouter>
 );

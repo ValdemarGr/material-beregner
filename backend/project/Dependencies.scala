@@ -22,6 +22,7 @@ object Dependencies {
   lazy val playWsXml = "com.typesafe.play" %% "play-ws-standalone-xml" % "2.1.0-M4"
   lazy val gcs = "com.google.cloud" % "google-cloud-storage" % "1.91.0"
   lazy val apacheCommons = "commons-io" % "commons-io" % "2.6"
+  lazy val circeDerivation = "io.circe" %% "circe-derivation" % "0.12.0-M7"
 
   lazy val gcsNioForTesting = "com.google.cloud" % "google-cloud-nio" % "0.109.0-alpha"
 
